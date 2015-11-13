@@ -1,0 +1,22 @@
+<ion-view view-title="MAD9132" class="h1 title" ng-controller="mad9132Ctrl">
+  <ion-content>
+    <ion-item class="wrap" style="word-wrap:break-word">
+	
+	{{ instructions }} </ion-item>
+    <form class="item item-input">
+    <label class="item item-input">
+    <input type="text" ng-model="data.task" placeholder="Add a task here..." />
+  </label>
+  <button type="button" ng-click="addTask()" class="button button-balanced">{{ addBtn }}</button>
+  </form>
+    <ul class="list" class="bar bar-header bar-calm">
+    <li class="item item-checkbox">
+    <ion-checkbox on-click="checkTask($index)" ng-repeat="task in tasks" id="$index" on-hold="removeTask($index)">{{task}}
+    </ion-checkbox>
+  </li>
+</ul>
+<ion-item>
+<button type="button" ng-click="removeAllTasks($index)" class="button button-assertive">{{ clearBtn }}</button>
+</ion-item>
+  </ion-content>
+</ion-view>

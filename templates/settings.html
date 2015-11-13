@@ -1,0 +1,7 @@
+<ion-view view-title="Settings" class="h1 title">
+  <ion-content>
+   <ion-item>
+  <ion-toggle ng-repeat="item in itemList" ng-model="item.checked" ng-checked="item.checked" toggle-class="toggle-assertive">{{item.text }}</ion-toggle>
+  </ion-item>
+  </ion-content>
+</ion-view>

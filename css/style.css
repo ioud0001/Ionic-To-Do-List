@@ -1,0 +1,12 @@
+/* Empty. Add your own CSS if you like */
+
+.item-complex .item-content, .item-radio .item-content{
+	background-color: alice-blue; !important
+}
+
+.item-complex .item-content:active {
+	background-color: deepskyblue; !important
+	color: white; !important
+	font-weight: bold; !important
+	transition: margin-left 4s ease-in-out 1s;
+}
